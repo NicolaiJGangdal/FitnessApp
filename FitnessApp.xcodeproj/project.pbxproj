@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DB649CA2A09B0C6007C76E8 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB649C92A09B0C6007C76E8 /* WorkoutDetailView.swift */; };
 		9DBC34BD2A090EB000D0D0E7 /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC34BC2A090EB000D0D0E7 /* FitnessAppApp.swift */; };
 		9DBC34BF2A090EB000D0D0E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC34BE2A090EB000D0D0E7 /* ContentView.swift */; };
 		9DBC34C12A090EB200D0D0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DB649C92A09B0C6007C76E8 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		9DBC34B92A090EB000D0D0E7 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBC34BC2A090EB000D0D0E7 /* FitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppApp.swift; sourceTree = "<group>"; };
 		9DBC34BE2A090EB000D0D0E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				9DBC34BC2A090EB000D0D0E7 /* FitnessAppApp.swift */,
 				9DBC34BE2A090EB000D0D0E7 /* ContentView.swift */,
+				9DB649C92A09B0C6007C76E8 /* WorkoutDetailView.swift */,
 				9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */,
 				9DBC34C22A090EB200D0D0E7 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBC34BF2A090EB000D0D0E7 /* ContentView.swift in Sources */,
+				9DB649CA2A09B0C6007C76E8 /* WorkoutDetailView.swift in Sources */,
 				9DBC34BD2A090EB000D0D0E7 /* FitnessAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
