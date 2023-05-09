@@ -12,6 +12,7 @@ struct ContentView: View {
     let workouts = workoutsData
     
     var body: some View {
+        
         NavigationView {
             
             VStack(alignment: .leading) {
@@ -50,7 +51,7 @@ struct ContentView: View {
                     .clipped()
                     .shadow(radius: 8)
                     //.padding(.top, 20)
-                .padding()
+                    .padding()
                 }
                 
                 Text("Weekly Plan")
@@ -125,8 +126,8 @@ struct Workout: Identifiable {
 }
 
 let workoutsData = [
-    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup", "Bench Press", "Incline Dumbbell Press", "Cable-flies", "Skull-crushers", "Tricep-extensions rope", "Tricep-extensions bar"]),
-    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto2", routine: ["Warmup", "Pullups", "Deadlift", "Bent-over barbell rows", "Seated machine rows", "Machine pulldowns", "Straight arm lat-pulldown", "Seated incline bicep-curls", "Seated hammer-curls", "Cable-curls"]),
+    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto8", routine: ["Warmup", "Bench Press", "Incline Dumbbell Press", "Cable-flies", "Skull-crushers", "Tricep-extensions rope", "Tricep-extensions bar"]),
+    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto9", routine: ["Warmup", "Pullups", "Deadlift", "Bent-over barbell rows", "Seated machine rows", "Machine pulldowns", "Straight arm lat-pulldown", "Seated incline bicep-curls", "Seated hammer-curls", "Cable-curls"]),
     Workout(day: "Wednesday", muscleGroup: "Legs", image: "workoutPhoto5", routine: ["Warmup", "Squats", "Romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Ab-machine", "Ab-routine"]),
     Workout(day: "Thursday", muscleGroup: "Shoulders", image: "workoutPhoto6", routine: ["Warmup", "Military press", "Arnold-press", "Lateral raises", "Bent over lateral raises", "Shrugs"]),
     Workout(day: "Friday", muscleGroup: "Arms", image: "workoutPhoto7", routine: ["Warmup", "Chin-ups", "Close-grip bench press", "Face down on incline bench bicep-curls", "Triceps overhead dumbbell press", "Standing hammer-curls", "Skull-crushers", "Cable-curls rope", "Tricep-extension rope", "Cable-curls bar", "Tricep-extensions bar"])

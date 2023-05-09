@@ -12,19 +12,45 @@ struct WorkoutDetailView: View {
     var workout: Workout
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(workout.day)
-                .padding(.leading, 30)
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-            Text(workout.muscleGroup)
-                .padding(.leading, 30)
-                .font(.title)
+        
+        // Added this to get the image inside the DayCard
+        ZStack {
             
-            List(workout.routine, id: \.self) { exercise in
-                Text(exercise)
+            Image(workout.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height:250)
+                .padding(.bottom, 600)
+            
+            //Here is what gets displayed when you press a DayCard
+            VStack(alignment: .leading) {
+                
+                //Spacer()
+                
+                Text(workout.day)
+                    .padding(.leading, 30)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                Text(workout.muscleGroup)
+                    .padding(.leading, 30)
+                    .font(.title)
+                    .foregroundColor(.white)
+                
+                List(workout.routine, id: \.self) { exercise in
+                    Text(exercise)
+                }
             }
+            .padding(.top, 80)
+            .frame(width:400)
+            .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
         }
+        //.frame(width: 380, height: 300)
+        //.cornerRadius(55)
+        //.clipped()
+        //.shadow(radius: 8)
+        //.padding(.top, 20)
+        //.padding()
     }
 }
 
