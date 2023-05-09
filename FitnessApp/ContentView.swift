@@ -16,37 +16,41 @@ struct ContentView: View {
             
             VStack(alignment: .leading) {
                 
-                //Main card view
-                ZStack {
-                    Image("workoutPhoto1")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height:250)
-                    
-                    
-                    //Vertical Stack - where objects are stacked vertically
-                    VStack {
+                
+                
+                NavigationLink(destination: Text("Coming Soon").font(.largeTitle)) {
+                    //Main card view
+                    ZStack {
+                        Image("workoutPhoto1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(height:250)
                         
-                        Spacer()
                         
-                        Text("Full Body Workout")
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                        Text("For Beginners")
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
+                        //Vertical Stack - where objects are stacked vertically
+                        VStack {
+                            
+                            Spacer()
+                            
+                            Text("Full Body Workout")
+                                .font(.largeTitle)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                            Text("Bodyweight")
+                                .fontWeight(.regular)
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+                        .frame(width:400)
+                        .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
                     }
-                    .padding()
-                    .frame(width:400)
-                    .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
-                }
-                .frame(width: 380, height: 300)
-                .cornerRadius(55)
-                .clipped()
-                .shadow(radius: 8)
-                //.padding(.top, 20)
+                    .frame(width: 380, height: 300)
+                    .cornerRadius(55)
+                    .clipped()
+                    .shadow(radius: 8)
+                    //.padding(.top, 20)
                 .padding()
+                }
                 
                 Text("Weekly Plan")
                     .font(.largeTitle)
@@ -120,11 +124,11 @@ struct Workout: Identifiable {
 }
 
 let workoutsData = [
-    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup", "Benchpress", "incline dumbbell press", "cable-flys"]),
-    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto2", routine: ["Warmup", "Pullups", "deadlift", "bent-over barbell rows", "seated machine rows", "machine pull-downs", "straight arm lat-pulldown"]),
-    Workout(day: "Wednesday", muscleGroup: "Legs", image: "workoutPhoto3", routine: ["Warmup", "Squats", "romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises"]),
-    Workout(day: "Thursday", muscleGroup: "Shoulders", image: "workoutPhoto4", routine: ["Warmup", "Arnold-press", "Military-press", "Lateral raises"]),
-    Workout(day: "Friday", muscleGroup: "Arms", image: "workoutPhoto2", routine: ["Warmup", "Chin-ups", "tight grip bench-press", "Dumbbell-rows", "Triceps overhead dumbbell press"])
+    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup", "Bench Press", "incline Dumbbell Press", "Cable-flys", "Skull-crushers", "Tricep-extensions rope", "Tricep-extension bar"]),
+    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto2", routine: ["Warmup", "Pullups", "Deadlift", "Bent-over Barbell rows", "Seated machine rows", "Machine Pull-downs", "Straight arm Lat-Pulldown", "Seated incline Bicep-curls", "Seated hammer-curls", "Cable-curls"]),
+    Workout(day: "Wednesday", muscleGroup: "Legs", image: "workoutPhoto5", routine: ["Warmup", "Squats", "Romanian-Deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Abs-machine", "Abs-routine"]),
+    Workout(day: "Thursday", muscleGroup: "Shoulders", image: "workoutPhoto6", routine: ["Warmup", "Military press", "Arnold-press", "Lateral-raises", "Bent over lateral raises", "Shrugs"]),
+    Workout(day: "Friday", muscleGroup: "Arms", image: "workoutPhoto7", routine: ["Warmup", "Chin-ups", "Close-grip Bench Press", "Face down on Incline bench Bicep-curls", "Triceps overhead dumbbell press", "Standing Hammer-curls", "Skull-crushers", "Cable-curls rope", "Tricep-extension rope", "Cable-curls bar", "Tricep-extension bar"])
 ]
 
 //var is indicative of some data that will be changed over time.
