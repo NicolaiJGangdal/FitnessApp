@@ -17,7 +17,8 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 
                 
-                
+                // Added this VStack and changed the name to NavigationLink
+                // This is to redirect the element within to open
                 NavigationLink(destination: Text("Coming Soon").font(.largeTitle)) {
                     //Main card view
                     ZStack {
