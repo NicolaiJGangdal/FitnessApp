@@ -125,11 +125,11 @@ struct Workout: Identifiable {
 }
 
 let workoutsData = [
-    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup", "Bench Press", "incline Dumbbell Press", "Cable-flys", "Skull-crushers", "Tricep-extensions rope", "Tricep-extension bar"]),
-    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto2", routine: ["Warmup", "Pullups", "Deadlift", "Bent-over Barbell rows", "Seated machine rows", "Machine Pull-downs", "Straight arm Lat-Pulldown", "Seated incline Bicep-curls", "Seated hammer-curls", "Cable-curls"]),
-    Workout(day: "Wednesday", muscleGroup: "Legs", image: "workoutPhoto5", routine: ["Warmup", "Squats", "Romanian-Deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Abs-machine", "Abs-routine"]),
-    Workout(day: "Thursday", muscleGroup: "Shoulders", image: "workoutPhoto6", routine: ["Warmup", "Military press", "Arnold-press", "Lateral-raises", "Bent over lateral raises", "Shrugs"]),
-    Workout(day: "Friday", muscleGroup: "Arms", image: "workoutPhoto7", routine: ["Warmup", "Chin-ups", "Close-grip Bench Press", "Face down on Incline bench Bicep-curls", "Triceps overhead dumbbell press", "Standing Hammer-curls", "Skull-crushers", "Cable-curls rope", "Tricep-extension rope", "Cable-curls bar", "Tricep-extension bar"])
+    Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup", "Bench Press", "Incline Dumbbell Press", "Cable-flies", "Skull-crushers", "Tricep-extensions rope", "Tricep-extensions bar"]),
+    Workout(day: "Tuesday", muscleGroup: "Back", image: "workoutPhoto2", routine: ["Warmup", "Pullups", "Deadlift", "Bent-over barbell rows", "Seated machine rows", "Machine pulldowns", "Straight arm lat-pulldown", "Seated incline bicep-curls", "Seated hammer-curls", "Cable-curls"]),
+    Workout(day: "Wednesday", muscleGroup: "Legs", image: "workoutPhoto5", routine: ["Warmup", "Squats", "Romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Ab-machine", "Ab-routine"]),
+    Workout(day: "Thursday", muscleGroup: "Shoulders", image: "workoutPhoto6", routine: ["Warmup", "Military press", "Arnold-press", "Lateral raises", "Bent over lateral raises", "Shrugs"]),
+    Workout(day: "Friday", muscleGroup: "Arms", image: "workoutPhoto7", routine: ["Warmup", "Chin-ups", "Close-grip bench press", "Face down on incline bench bicep-curls", "Triceps overhead dumbbell press", "Standing hammer-curls", "Skull-crushers", "Cable-curls rope", "Tricep-extension rope", "Cable-curls bar", "Tricep-extensions bar"])
 ]
 
 //var is indicative of some data that will be changed over time.
