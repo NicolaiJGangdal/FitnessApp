@@ -5,11 +5,13 @@
 //  Created by Nicolai Jensen Gangdal on 08/05/2023.
 //
 
+
 import SwiftUI
 
 struct WorkoutDetailView: View {
     
     var workout: Workout
+    
     
     var body: some View {
         
@@ -40,17 +42,13 @@ struct WorkoutDetailView: View {
                 List(workout.routine, id: \.self) { exercise in
                     Text(exercise)
                 }
+                .padding(.vertical)
             }
             .padding(.top, 80)
             .frame(width:400)
             .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
         }
-        //.frame(width: 380, height: 300)
-        //.cornerRadius(55)
-        //.clipped()
-        //.shadow(radius: 8)
-        //.padding(.top, 20)
-        //.padding()
+        // Edit liststyle here example: .listStyle(SidebarListStyle())
     }
 }
 
@@ -59,3 +57,4 @@ struct WorkoutDetailView_Previews: PreviewProvider {
         WorkoutDetailView(workout: Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup, Benchpress, incline dumbbell press, cable-flys"]))
     }
 }
+
