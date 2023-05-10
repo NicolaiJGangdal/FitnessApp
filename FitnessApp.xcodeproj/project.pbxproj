@@ -12,6 +12,8 @@
 		9DBC34BF2A090EB000D0D0E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC34BE2A090EB000D0D0E7 /* ContentView.swift */; };
 		9DBC34C12A090EB200D0D0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */; };
 		9DBC34C42A090EB200D0D0E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC34C32A090EB200D0D0E7 /* Preview Assets.xcassets */; };
+		9DD8784F2A0C42BA00FABB2A /* EditMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8784E2A0C42BA00FABB2A /* EditMenuView.swift */; };
+		9DD878512A0C4E7C00FABB2A /* PlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD878502A0C4E7C00FABB2A /* PlaceHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9DBC34BE2A090EB000D0D0E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBC34C32A090EB200D0D0E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DD8784E2A0C42BA00FABB2A /* EditMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMenuView.swift; sourceTree = "<group>"; };
+		9DD878502A0C4E7C00FABB2A /* PlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				9DB649C92A09B0C6007C76E8 /* WorkoutDetailView.swift */,
 				9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */,
 				9DBC34C22A090EB200D0D0E7 /* Preview Content */,
+				9DD8784E2A0C42BA00FABB2A /* EditMenuView.swift */,
+				9DD878502A0C4E7C00FABB2A /* PlaceHolder.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 				9DBC34BF2A090EB000D0D0E7 /* ContentView.swift in Sources */,
 				9DB649CA2A09B0C6007C76E8 /* WorkoutDetailView.swift in Sources */,
 				9DBC34BD2A090EB000D0D0E7 /* FitnessAppApp.swift in Sources */,
+				9DD878512A0C4E7C00FABB2A /* PlaceHolder.swift in Sources */,
+				9DD8784F2A0C42BA00FABB2A /* EditMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
