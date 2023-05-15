@@ -1,20 +1,20 @@
 //
-//  WorkoutDetailView.swift
+//  WorkoutDetailView7.swift
 //  FitnessApp
 //
-//  Created by Nicolai Jensen Gangdal on 08/05/2023.
+//  Created by Nicolai Jensen Gangdal on 15/05/2023.
 //
 
 
 import SwiftUI
 
-struct WorkoutDetailView: View {
+struct WorkoutDetailView7: View {
     
     
-    @AppStorage("subTitle1") var subTitle1: String = "Legs"
-    @AppStorage("routine1") private var routineData1: Data?
-    @State private var routine1: [String] = [
-        "Warmup", "Squats", "Romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Ab-machine", "Ab-routine"
+    @AppStorage("subTitle7") var subTitle7: String = "Rest"
+    @AppStorage("routine7") private var routineData7: Data?
+    @State private var routine7: [String] = [
+        "Rest"
     ]
     
     @State private var showingAlert = false
@@ -24,7 +24,7 @@ struct WorkoutDetailView: View {
         
         ZStack {
             
-            Image("workoutPhoto2")
+            Image("workoutPhoto8")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 250)
@@ -32,13 +32,13 @@ struct WorkoutDetailView: View {
             
             VStack(alignment: .leading) {
                 
-                Text("Monday")
+                Text("Sunday")
                     .padding(.leading, 30)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                 
-                Text(subTitle1)
+                Text(subTitle7)
                     .padding(.leading, 30)
                     .font(.title)
                     .foregroundColor(.white)
@@ -51,7 +51,7 @@ struct WorkoutDetailView: View {
                     .alert("Enter an Exercise", isPresented: $showingAlert) {
                         TextField("Enter list item", text: $newListItem)
                             .foregroundColor(.black)
-                        Button("OK", action: submitRoutine)
+                        Button("OK", action: submitRoutine7)
                     }
                     
                     Spacer()
@@ -69,12 +69,12 @@ struct WorkoutDetailView: View {
                 .fontWeight(.semibold)
                 
                 List {
-                    ForEach(routine1, id: \.self) { exercise in
+                    ForEach(routine7, id: \.self) { exercise in
                         Text(exercise)
                             .font(.body) // Set the font size to match File 1
                     }
-                    .onDelete(perform: deleteRoutine)
-                    .onMove { routine1.move(fromOffsets: $0, toOffset: $1)}
+                    .onDelete(perform: deleteRoutine7)
+                    .onMove { routine7.move(fromOffsets: $0, toOffset: $1)}
                 }
                 /* New styling not working
                 .padding(.top, 80)
@@ -89,10 +89,10 @@ struct WorkoutDetailView: View {
                 
             }
             .onAppear {
-                loadRoutine()
+                loadRoutine7()
             }
             .onDisappear {
-                saveRoutine()
+                saveRoutine7()
             }
             .padding(.top, 80)
             .padding(.bottom, 20)
@@ -101,31 +101,31 @@ struct WorkoutDetailView: View {
         }
     }
     
-    func submitRoutine() {
+    func submitRoutine7() {
         print("You entered \(newListItem)")
-        routine1.append(newListItem)
+        routine7.append(newListItem)
     }
     
-    func deleteRoutine(indexSet: IndexSet) {
-        routine1.remove(atOffsets: indexSet)
+    func deleteRoutine7(indexSet: IndexSet) {
+        routine7.remove(atOffsets: indexSet)
     }
     
-    func loadRoutine() {
-        guard let savedData = routineData1 else { return }
+    func loadRoutine7() {
+        guard let savedData = routineData7 else { return }
         if let decodedData = try? JSONDecoder().decode([String].self, from: savedData) {
-            routine1 = decodedData
+            routine7 = decodedData
         }
     }
     
-    func saveRoutine() {
-        if let encodedData = try? JSONEncoder().encode(routine1) {
-            routineData1 = encodedData
+    func saveRoutine7() {
+        if let encodedData = try? JSONEncoder().encode(routine7) {
+            routineData7 = encodedData
         }
     }
 }
 
-struct WorkoutDetailView_Previews: PreviewProvider {
+struct WorkoutDetailView7_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView()
+        WorkoutDetailView7()
     }
 }

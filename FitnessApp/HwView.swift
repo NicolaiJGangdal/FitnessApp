@@ -1,20 +1,17 @@
 //
-//  WorkoutDetailView.swift
+//  HwView.swift
 //  FitnessApp
 //
-//  Created by Nicolai Jensen Gangdal on 08/05/2023.
+//  Created by Nicolai Jensen Gangdal on 15/05/2023.
 //
-
 
 import SwiftUI
 
-struct WorkoutDetailView: View {
+struct HwView: View {
     
-    
-    @AppStorage("subTitle1") var subTitle1: String = "Legs"
-    @AppStorage("routine1") private var routineData1: Data?
-    @State private var routine1: [String] = [
-        "Warmup", "Squats", "Romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Ab-machine", "Ab-routine"
+    @AppStorage("homeRoutine") private var homeRoutineData: Data?
+    @State private var homeRoutine: [String] = [
+        "Warmup", "Burpees", "Handstand Push Ups", "Reverse Crunch", "Bycycle-Crunch", "Pistol Squat", "Push Ups", "Narrow Grip Push Ups", "Plank"
     ]
     
     @State private var showingAlert = false
@@ -24,7 +21,7 @@ struct WorkoutDetailView: View {
         
         ZStack {
             
-            Image("workoutPhoto2")
+            Image("workoutPhoto1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 250)
@@ -32,13 +29,13 @@ struct WorkoutDetailView: View {
             
             VStack(alignment: .leading) {
                 
-                Text("Monday")
+                Text("Full Body Workout")
                     .padding(.leading, 30)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                 
-                Text(subTitle1)
+                Text("Bodyweight")
                     .padding(.leading, 30)
                     .font(.title)
                     .foregroundColor(.white)
@@ -69,12 +66,12 @@ struct WorkoutDetailView: View {
                 .fontWeight(.semibold)
                 
                 List {
-                    ForEach(routine1, id: \.self) { exercise in
+                    ForEach(homeRoutine, id: \.self) { exercise in
                         Text(exercise)
                             .font(.body) // Set the font size to match File 1
                     }
                     .onDelete(perform: deleteRoutine)
-                    .onMove { routine1.move(fromOffsets: $0, toOffset: $1)}
+                    .onMove { homeRoutine.move(fromOffsets: $0, toOffset: $1)}
                 }
                 /* New styling not working
                 .padding(.top, 80)
@@ -103,29 +100,29 @@ struct WorkoutDetailView: View {
     
     func submitRoutine() {
         print("You entered \(newListItem)")
-        routine1.append(newListItem)
+        homeRoutine.append(newListItem)
     }
     
     func deleteRoutine(indexSet: IndexSet) {
-        routine1.remove(atOffsets: indexSet)
+        homeRoutine.remove(atOffsets: indexSet)
     }
     
     func loadRoutine() {
-        guard let savedData = routineData1 else { return }
+        guard let savedData = homeRoutineData else { return }
         if let decodedData = try? JSONDecoder().decode([String].self, from: savedData) {
-            routine1 = decodedData
+            homeRoutine = decodedData
         }
     }
     
     func saveRoutine() {
-        if let encodedData = try? JSONEncoder().encode(routine1) {
-            routineData1 = encodedData
+        if let encodedData = try? JSONEncoder().encode(homeRoutine) {
+            homeRoutineData = encodedData
         }
     }
 }
 
-struct WorkoutDetailView_Previews: PreviewProvider {
+struct HwView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView()
+        HwView()
     }
 }
