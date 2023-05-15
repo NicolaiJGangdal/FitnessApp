@@ -10,113 +10,122 @@ import SwiftUI
 
 struct WorkoutDetailView: View {
     
-    @State var workout: Workout
+    
+    @AppStorage("subTitle1") var subTitle1: String = "Legs"
+    @AppStorage("routine1") private var routineData1: Data?
+    @State private var routine1: [String] = [
+        "Warmup", "Squats", "Romanian-deadlifts", "Split-squats", "Leg-curls", "Leg-extensions", "Calf-raises", "Ab-machine", "Ab-routine"
+    ]
     
     @State private var showingAlert = false
-    @State private var newExercise = ""
+    @State private var newListItem = ""
     
     var body: some View {
         
-        // Added this to get the image inside the DayCard
         ZStack {
             
-            Image(workout.image)
+            Image("workoutPhoto2")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(height:250)
+                .frame(height: 250)
                 .padding(.bottom, 600)
             
-            //Here is what gets displayed when you press a DayCard
             VStack(alignment: .leading) {
                 
-                //Spacer()
-                
-                Text(workout.day)
+                Text("Monday")
                     .padding(.leading, 30)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
-                Text(workout.muscleGroup)
+                
+                Text(subTitle1)
                     .padding(.leading, 30)
                     .font(.title)
                     .foregroundColor(.white)
                 
                 HStack {
                     Button("Add Exercise") {
-                        showingAlert = true
+                        showingAlert.toggle()
+                        print("Pressed")
                     }
                     .alert("Enter an Exercise", isPresented: $showingAlert) {
-                        TextField("Enter exercise", text: $newExercise)
+                        TextField("Enter list item", text: $newListItem)
                             .foregroundColor(.black)
-                        Button("OK", action: addExercise)
+                        Button("OK", action: submitRoutine)
                     }
                     
                     Spacer()
                     
                     EditButton()
+                        .foregroundColor(.white)
                 }
+                // Gammel styling
                 .padding(.horizontal, 30)
                 .padding(.vertical, 10)
                 //.padding(.horizontal,80)
                 //.background() // This is to make the Footer seemless
+                //Ny styling
                 .foregroundColor(.white) //Changes the color of the buttons and the inputtext
                 .fontWeight(.semibold)
                 
                 List {
-                    ForEach(workout.routine, id: \.self) { exercise in
+                    ForEach(routine1, id: \.self) { exercise in
                         Text(exercise)
+                            .font(.body) // Set the font size to match File 1
                     }
-                    .onDelete(perform: deleteExercise)
+                    .onDelete(perform: deleteRoutine)
+                    .onMove { routine1.move(fromOffsets: $0, toOffset: $1)}
                 }
+                /* New styling not working
+                .padding(.top, 80)
+                .frame(width:400)
+                .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
+                 */
+                 // Gammel Styling
                 .padding(.vertical)
                 
-
-
+                .listStyle(InsetGroupedListStyle()) // Set the list style to plain
+                 
+                
+            }
+            .onAppear {
+                loadRoutine()
+            }
+            .onDisappear {
+                saveRoutine()
             }
             .padding(.top, 80)
-            .frame(width:400)
+            .padding(.bottom, 20)
+            .frame(width: 400)
             .background(Color(#colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 0.5)))
-            
-            // Edit liststyle here example: .listStyle(SidebarListStyle())
         }
     }
     
-    func addExercise() {
-        print("You entered \(newExercise)")
-        workout.routine.append(newExercise)
-        /*
-        workout.routine.apped(newExercise)
-        newExercise = ""
-         */
+    func submitRoutine() {
+        print("You entered \(newListItem)")
+        routine1.append(newListItem)
     }
     
-    func deleteExercise(indexSet: IndexSet) {
-        workout.routine.remove(atOffsets: indexSet)
+    func deleteRoutine(indexSet: IndexSet) {
+        routine1.remove(atOffsets: indexSet)
     }
     
+    func loadRoutine() {
+        guard let savedData = routineData1 else { return }
+        if let decodedData = try? JSONDecoder().decode([String].self, from: savedData) {
+            routine1 = decodedData
+        }
+    }
+    
+    func saveRoutine() {
+        if let encodedData = try? JSONEncoder().encode(routine1) {
+            routineData1 = encodedData
+        }
+    }
 }
 
 struct WorkoutDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView(workout: Workout(day: "Monday", muscleGroup: "Chest", image: "workoutPhoto4", routine: ["Warmup, Benchpress, incline dumbbell press, cable-flys"]))
+        WorkoutDetailView()
     }
 }
-
-
-
-/*
- Here is a button with two texts to give it a black outline
- 
- Button(action: {
-     showingAlert = true
- }) {
-     Text("Add Exercise")
-         .foregroundColor(.black)
-         .fontWeight(.semibold)
-         .overlay(
-             Text("Add Exercise")
-                 .foregroundColor(.white)
-                 .offset(x: -1, y: -1) // Offset the black text slightly to create an outline effect
-         )
- }
- */
