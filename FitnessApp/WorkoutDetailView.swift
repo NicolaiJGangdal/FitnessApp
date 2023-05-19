@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WorkoutDetailView: View {
     
-    
+    //Commit from new Mac
     @AppStorage("subTitle1") var subTitle1: String = "Legs"
     @AppStorage("routine1") private var routineData1: Data?
     @State private var routine1: [String] = [
