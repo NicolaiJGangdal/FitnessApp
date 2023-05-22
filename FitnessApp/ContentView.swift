@@ -53,7 +53,6 @@ struct ContentView: View {
     @State private var isEditing7: Bool = false
     @State private var showAlert7 = false
     
-    @State private var isCalendarActive = false
     
     var body: some View {
         
