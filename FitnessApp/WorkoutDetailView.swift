@@ -10,6 +10,7 @@ import SwiftUI
 
 struct WorkoutDetailView: View {
     
+    @State private var isCalendarActive = false
     //Commit from new Mac
     @AppStorage("subTitle1") var subTitle1: String = "Legs"
     @AppStorage("routine1") private var routineData1: Data?
@@ -83,7 +84,6 @@ struct WorkoutDetailView: View {
                  */
                  // Gammel Styling
                 .padding(.vertical)
-                
                 .listStyle(InsetGroupedListStyle()) // Set the list style to plain
                  
                 

@@ -53,6 +53,7 @@ struct ContentView: View {
     @State private var isEditing7: Bool = false
     @State private var showAlert7 = false
     
+    @State private var isCalendarActive = false
     
     var body: some View {
         
@@ -106,7 +107,6 @@ struct ContentView: View {
                 // Stack where the inner elements are arranged/ stacked horizontally
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 30) {
-                        
                         
                         //Day card 1
                         NavigationLink(destination: WorkoutDetailView()) {
@@ -492,7 +492,6 @@ struct ContentView: View {
                             Button("Save", action: submitSubtitle7)
                             Button("Cancel", role: .cancel) {}
                         }
-                        
                     }
                     .padding()
                 }
