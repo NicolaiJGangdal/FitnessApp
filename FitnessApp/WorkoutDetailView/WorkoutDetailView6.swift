@@ -1,5 +1,5 @@
 //
-//  HwView.swift
+//  WorkoutDetailView6.swift
 //  FitnessApp
 //
 //  Created by Nicolai Jensen Gangdal on 15/05/2023.
@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct HwView: View {
+struct WorkoutDetailView6: View {
     
-    @AppStorage("homeRoutine") private var homeRoutineData: Data?
-    @State private var homeRoutine: [String] = [
-        "Warmup", "Burpees", "Handstand Push Ups", "Reverse Crunch", "Bycycle-Crunch", "Pistol Squat", "Push Ups", "Narrow Grip Push Ups", "Plank"
+    
+    @AppStorage("subTitle6") var subTitle6: String = "Cardio"
+    @AppStorage("routine6") private var routineData6: Data?
+    @State private var routine6: [String] = [
+        "Warmup", "Running", "Stair-Machine", "Rowing", "Walking", "Hiking"
     ]
     
     @State private var showingAlert = false
@@ -21,7 +23,7 @@ struct HwView: View {
         
         ZStack {
             
-            Image("workoutPhoto1")
+            Image("workoutPhoto7")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 250)
@@ -29,13 +31,13 @@ struct HwView: View {
             
             VStack(alignment: .leading) {
                 
-                Text("Full Body Workout")
+                Text("Saturday")
                     .padding(.leading, 30)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                 
-                Text("Bodyweight")
+                Text(subTitle6)
                     .padding(.leading, 30)
                     .font(.title)
                     .foregroundColor(.white)
@@ -48,7 +50,7 @@ struct HwView: View {
                     .alert("Enter an Exercise", isPresented: $showingAlert) {
                         TextField("Enter list item", text: $newListItem)
                             .foregroundColor(.black)
-                        Button("OK", action: submitRoutine)
+                        Button("OK", action: submitRoutine6)
                     }
                     
                     Spacer()
@@ -66,12 +68,12 @@ struct HwView: View {
                 .fontWeight(.semibold)
                 
                 List {
-                    ForEach(homeRoutine, id: \.self) { exercise in
+                    ForEach(routine6, id: \.self) { exercise in
                         Text(exercise)
                             .font(.body) // Set the font size to match File 1
                     }
-                    .onDelete(perform: deleteRoutine)
-                    .onMove { homeRoutine.move(fromOffsets: $0, toOffset: $1)}
+                    .onDelete(perform: deleteRoutine6)
+                    .onMove { routine6.move(fromOffsets: $0, toOffset: $1)}
                 }
                 /* New styling not working
                 .padding(.top, 80)
@@ -81,15 +83,17 @@ struct HwView: View {
                  // Gammel Styling
                 .padding(.vertical)
                 
+                //Footer padding added to give the list space from the Footer
+                .padding(.bottom, 100)
                 .listStyle(InsetGroupedListStyle()) // Set the list style to plain
                  
                 
             }
             .onAppear {
-                loadRoutine()
+                loadRoutine6()
             }
             .onDisappear {
-                saveRoutine()
+                saveRoutine6()
             }
             .padding(.top, 80)
             .padding(.bottom, 20)
@@ -98,31 +102,31 @@ struct HwView: View {
         }
     }
     
-    func submitRoutine() {
+    func submitRoutine6() {
         print("You entered \(newListItem)")
-        homeRoutine.append(newListItem)
+        routine6.append(newListItem)
     }
     
-    func deleteRoutine(indexSet: IndexSet) {
-        homeRoutine.remove(atOffsets: indexSet)
+    func deleteRoutine6(indexSet: IndexSet) {
+        routine6.remove(atOffsets: indexSet)
     }
     
-    func loadRoutine() {
-        guard let savedData = homeRoutineData else { return }
+    func loadRoutine6() {
+        guard let savedData = routineData6 else { return }
         if let decodedData = try? JSONDecoder().decode([String].self, from: savedData) {
-            homeRoutine = decodedData
+            routine6 = decodedData
         }
     }
     
-    func saveRoutine() {
-        if let encodedData = try? JSONEncoder().encode(homeRoutine) {
-            homeRoutineData = encodedData
+    func saveRoutine6() {
+        if let encodedData = try? JSONEncoder().encode(routine6) {
+            routineData6 = encodedData
         }
     }
 }
 
-struct HwView_Previews: PreviewProvider {
+struct WorkoutDetailView6_Previews: PreviewProvider {
     static var previews: some View {
-        HwView()
+        WorkoutDetailView6()
     }
 }

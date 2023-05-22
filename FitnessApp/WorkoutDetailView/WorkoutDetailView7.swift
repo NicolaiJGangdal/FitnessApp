@@ -1,19 +1,20 @@
 //
-//  WorkoutDetailView5.swift
+//  WorkoutDetailView7.swift
 //  FitnessApp
 //
 //  Created by Nicolai Jensen Gangdal on 15/05/2023.
 //
 
+
 import SwiftUI
 
-struct WorkoutDetailView5: View {
+struct WorkoutDetailView7: View {
     
     
-    @AppStorage("subTitle5") var subTitle5: String = "Arms"
-    @AppStorage("routine5") private var routineData5: Data?
-    @State private var routine5: [String] = [
-        "Warmup", "Chin-ups", "Close-grip bench press", "Face down on incline bench bicep-curls", "Triceps overhead dumbbell press", "Standing hammer-curls", "Skull-crushers", "Cable-curls rope", "Tricep-extension rope", "Cable-curls bar", "Tricep-extensions bar"
+    @AppStorage("subTitle7") var subTitle7: String = "Rest"
+    @AppStorage("routine7") private var routineData7: Data?
+    @State private var routine7: [String] = [
+        "Rest"
     ]
     
     @State private var showingAlert = false
@@ -23,7 +24,7 @@ struct WorkoutDetailView5: View {
         
         ZStack {
             
-            Image("workoutPhoto6")
+            Image("workoutPhoto8")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 250)
@@ -31,13 +32,13 @@ struct WorkoutDetailView5: View {
             
             VStack(alignment: .leading) {
                 
-                Text("Friday")
+                Text("Sunday")
                     .padding(.leading, 30)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                 
-                Text(subTitle5)
+                Text(subTitle7)
                     .padding(.leading, 30)
                     .font(.title)
                     .foregroundColor(.white)
@@ -50,7 +51,7 @@ struct WorkoutDetailView5: View {
                     .alert("Enter an Exercise", isPresented: $showingAlert) {
                         TextField("Enter list item", text: $newListItem)
                             .foregroundColor(.black)
-                        Button("OK", action: submitRoutine5)
+                        Button("OK", action: submitRoutine7)
                     }
                     
                     Spacer()
@@ -68,12 +69,12 @@ struct WorkoutDetailView5: View {
                 .fontWeight(.semibold)
                 
                 List {
-                    ForEach(routine5, id: \.self) { exercise in
+                    ForEach(routine7, id: \.self) { exercise in
                         Text(exercise)
                             .font(.body) // Set the font size to match File 1
                     }
-                    .onDelete(perform: deleteRoutine5)
-                    .onMove { routine5.move(fromOffsets: $0, toOffset: $1)}
+                    .onDelete(perform: deleteRoutine7)
+                    .onMove { routine7.move(fromOffsets: $0, toOffset: $1)}
                 }
                 /* New styling not working
                 .padding(.top, 80)
@@ -83,15 +84,17 @@ struct WorkoutDetailView5: View {
                  // Gammel Styling
                 .padding(.vertical)
                 
+                //Footer padding added to give the list space from the Footer
+                .padding(.bottom, 100)
                 .listStyle(InsetGroupedListStyle()) // Set the list style to plain
                  
                 
             }
             .onAppear {
-                loadRoutine5()
+                loadRoutine7()
             }
             .onDisappear {
-                saveRoutine5()
+                saveRoutine7()
             }
             .padding(.top, 80)
             .padding(.bottom, 20)
@@ -100,31 +103,31 @@ struct WorkoutDetailView5: View {
         }
     }
     
-    func submitRoutine5() {
+    func submitRoutine7() {
         print("You entered \(newListItem)")
-        routine5.append(newListItem)
+        routine7.append(newListItem)
     }
     
-    func deleteRoutine5(indexSet: IndexSet) {
-        routine5.remove(atOffsets: indexSet)
+    func deleteRoutine7(indexSet: IndexSet) {
+        routine7.remove(atOffsets: indexSet)
     }
     
-    func loadRoutine5() {
-        guard let savedData = routineData5 else { return }
+    func loadRoutine7() {
+        guard let savedData = routineData7 else { return }
         if let decodedData = try? JSONDecoder().decode([String].self, from: savedData) {
-            routine5 = decodedData
+            routine7 = decodedData
         }
     }
     
-    func saveRoutine5() {
-        if let encodedData = try? JSONEncoder().encode(routine5) {
-            routineData5 = encodedData
+    func saveRoutine7() {
+        if let encodedData = try? JSONEncoder().encode(routine7) {
+            routineData7 = encodedData
         }
     }
 }
 
-struct WorkoutDetailView5_Previews: PreviewProvider {
+struct WorkoutDetailView7_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutDetailView5()
+        WorkoutDetailView7()
     }
 }
