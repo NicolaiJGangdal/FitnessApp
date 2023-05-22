@@ -107,7 +107,6 @@ struct ContentView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 30) {
                         
-                        
                         //Day card 1
                         NavigationLink(destination: WorkoutDetailView()) {
                             ZStack {
@@ -492,7 +491,6 @@ struct ContentView: View {
                             Button("Save", action: submitSubtitle7)
                             Button("Cancel", role: .cancel) {}
                         }
-                        
                     }
                     .padding()
                 }
