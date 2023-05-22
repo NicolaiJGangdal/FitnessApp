@@ -21,6 +21,8 @@
 		9DBC34C42A090EB200D0D0E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC34C32A090EB200D0D0E7 /* Preview Assets.xcassets */; };
 		9DD8784F2A0C42BA00FABB2A /* EditMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8784E2A0C42BA00FABB2A /* EditMenuView.swift */; };
 		9DD878512A0C4E7C00FABB2A /* PlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD878502A0C4E7C00FABB2A /* PlaceHolder.swift */; };
+		AF9334E82A1BADC800B51EE4 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9334E72A1BADC800B51EE4 /* CalendarView.swift */; };
+		AF9334EA2A1BAE8B00B51EE4 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9334E92A1BAE8B00B51EE4 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		9DBC34C32A090EB200D0D0E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DD8784E2A0C42BA00FABB2A /* EditMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMenuView.swift; sourceTree = "<group>"; };
 		9DD878502A0C4E7C00FABB2A /* PlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolder.swift; sourceTree = "<group>"; };
+		AF9334E72A1BADC800B51EE4 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		AF9334E92A1BAE8B00B51EE4 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				9D6462B92A12CCA0009ADBD7 /* WorkoutDetailView5.swift */,
 				9D6462BB2A12CDD2009ADBD7 /* WorkoutDetailView6.swift */,
 				9D6462BD2A12D10E009ADBD7 /* WorkoutDetailView7.swift */,
+				AF9334E92A1BAE8B00B51EE4 /* CustomTabBar.swift */,
+				AF9334E72A1BADC800B51EE4 /* CalendarView.swift */,
 				9D6462B32A12C631009ADBD7 /* HwView.swift */,
 				9DBC34C02A090EB200D0D0E7 /* Assets.xcassets */,
 				9DBC34C22A090EB200D0D0E7 /* Preview Content */,
@@ -169,10 +175,12 @@
 			files = (
 				9D6462B42A12C631009ADBD7 /* HwView.swift in Sources */,
 				9D6462B22A12C52B009ADBD7 /* WorkoutDetailView2.swift in Sources */,
+				AF9334EA2A1BAE8B00B51EE4 /* CustomTabBar.swift in Sources */,
 				9DBC34BF2A090EB000D0D0E7 /* ContentView.swift in Sources */,
 				9D6462BE2A12D10E009ADBD7 /* WorkoutDetailView7.swift in Sources */,
 				9DB649CA2A09B0C6007C76E8 /* WorkoutDetailView.swift in Sources */,
 				9DBC34BD2A090EB000D0D0E7 /* FitnessAppApp.swift in Sources */,
+				AF9334E82A1BADC800B51EE4 /* CalendarView.swift in Sources */,
 				9DD878512A0C4E7C00FABB2A /* PlaceHolder.swift in Sources */,
 				9D6462B82A12CBBB009ADBD7 /* WorkoutDetailView4.swift in Sources */,
 				9D6462BC2A12CDD2009ADBD7 /* WorkoutDetailView6.swift in Sources */,

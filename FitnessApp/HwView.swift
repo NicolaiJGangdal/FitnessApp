@@ -81,6 +81,8 @@ struct HwView: View {
                  // Gammel Styling
                 .padding(.vertical)
                 
+                //Footer padding added to give the list space from the Footer
+                .padding(.bottom, 100)
                 .listStyle(InsetGroupedListStyle()) // Set the list style to plain
                  
                 
