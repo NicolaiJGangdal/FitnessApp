@@ -52,12 +52,22 @@ struct Page1: View {
 
 struct Page2: View {
     var body: some View {
-        CalendarView()
+        
+        File1()
+        
+        //CalendarView()
     }
 }
 
 struct Page3: View {
     var body: some View {
+        File2()
+        
+        
+        
+        //InfoLogger()
+        
+        /* Old Info example site
         VStack {
             Image(systemName: Tab.info.rawValue)
                 .resizable()
@@ -68,5 +78,6 @@ struct Page3: View {
                 .font(.title)
                 .padding()
         }
+        */
     }
 }
