@@ -7,7 +7,6 @@
 
 
 
-
 //Issue with first element missing title. But all elements are now stored and are editable
 import SwiftUI
 
@@ -32,13 +31,13 @@ struct FormView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
             }
-            .navigationTitle("Add Subtitle")
+            .navigationTitle("Add Exercise")
         }
     }
 }
 
 struct File1: View {
-    let weekList = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let weekList = ["Warm up", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     @State private var isFormPresented = false
     @State private var selectedDay: String?
     

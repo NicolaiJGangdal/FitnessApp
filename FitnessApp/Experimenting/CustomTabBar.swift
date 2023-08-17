@@ -10,14 +10,20 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case house
     case calendar
-    case info
+    //case stopwatch
+    case lasso
+    case doc
 }
 
 struct CustomTabBar: View {
     @Binding var selectedTab: Tab
     
     private var fillImage: String {
-        selectedTab.rawValue + ".circle.fill"
+        selectedTab.rawValue + ""
+    }
+    
+    private var fillImage2: String {
+        selectedTab.rawValue + ".fill"
     }
     
     private var tabColor: Color {
@@ -26,7 +32,9 @@ struct CustomTabBar: View {
             return .gray
         case .calendar:
             return .gray
-        case .info:
+        case .lasso:
+            return .gray
+        case .doc:
             return .gray
         }
     }
@@ -39,7 +47,7 @@ struct CustomTabBar: View {
                 Button(action: {
                     selectedTab = .house
                 }) {
-                    Image(systemName: selectedTab == .house ? fillImage : Tab.house.rawValue)
+                    Image(systemName: selectedTab == .house ? fillImage2 : Tab.house.rawValue)
                         .scaleEffect(selectedTab == .house ? 1.25 : 1.0)
                         .foregroundColor(selectedTab == .house ? tabColor : .gray)
                         .font(.system(size: 22))
@@ -59,11 +67,22 @@ struct CustomTabBar: View {
                 Spacer()
                 
                 Button(action: {
-                    selectedTab = .info
+                    selectedTab = .lasso
                 }) {
-                    Image(systemName: selectedTab == .info ? fillImage : Tab.info.rawValue)
-                        .scaleEffect(selectedTab == .info ? 1.25 : 1.0)
-                        .foregroundColor(selectedTab == .info ? tabColor : .gray)
+                    Image(systemName: selectedTab == .lasso ? fillImage2 : Tab.lasso.rawValue)
+                        .scaleEffect(selectedTab == .lasso ? 1.25 : 1.0)
+                        .foregroundColor(selectedTab == .lasso ? tabColor : .gray)
+                        .font(.system(size: 22))
+                }
+                
+                Spacer()
+                
+                Button(action: {
+                    selectedTab = .doc
+                }) {
+                    Image(systemName: selectedTab == .doc ? fillImage2 : Tab.doc.rawValue)
+                        .scaleEffect(selectedTab == .doc ? 1.25 : 1.0)
+                        .foregroundColor(selectedTab == .doc ? tabColor : .gray)
                         .font(.system(size: 22))
                 }
                 

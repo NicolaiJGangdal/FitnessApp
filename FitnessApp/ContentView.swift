@@ -4,7 +4,7 @@
 //
 //  Created by Nicolai Jensen Gangdal on 08/05/2023.
 //
-
+ 
 import SwiftUI
 
 struct ContentView: View {
@@ -16,14 +16,23 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            
+            /*
+            Image("gymBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            */
             VStack {
                 switch selectedTab {
                 case .house:
                     Page1()
                 case .calendar:
                     Page2()
-                case .info:
+                case .lasso:
                     Page3()
+                case .doc:
+                    Page4()
                 }
             }
             
@@ -53,31 +62,27 @@ struct Page1: View {
 struct Page2: View {
     var body: some View {
         
-        File1()
-        
-        //CalendarView()
+        //InfoLogger()
+        //File2()
+        //CalendarTestView()
+        HistoryView()
     }
 }
 
 struct Page3: View {
     var body: some View {
-        File2()
-        
-        
+        File1()
         
         //InfoLogger()
         
-        /* Old Info example site
-        VStack {
-            Image(systemName: Tab.info.rawValue)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-            
-            Text(Tab.info.rawValue.capitalized)
-                .font(.title)
-                .padding()
-        }
-        */
     }
 }
+
+struct Page4: View {
+    var body: some View {
+
+        //Guide()
+        File2()
+    }
+}
+

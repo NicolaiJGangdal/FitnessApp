@@ -7,7 +7,6 @@
 
 
 
-
 //Issue with first element missing title. But all elements are now stored and are editable
 import SwiftUI
 
@@ -58,6 +57,7 @@ struct File2: View {
     
     var body: some View {
         VStack {
+            
             Text("FILE 2")
                 .font(.title)
             
@@ -101,3 +101,4 @@ struct File2_Previews: PreviewProvider {
         File2()
     }
 }
+
