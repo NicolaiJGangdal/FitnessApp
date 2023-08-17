@@ -59,12 +59,8 @@ struct WorkoutDetailView: View {
                     EditButton()
                         .foregroundColor(.white)
                 }
-                // Gammel styling
                 .padding(.horizontal, 30)
                 .padding(.vertical, 10)
-                //.padding(.horizontal,80)
-                //.background() // This is to make the Footer seemless
-                //Ny styling
                 .foregroundColor(.white) //Changes the color of the buttons and the inputtext
                 .fontWeight(.semibold)
                 
