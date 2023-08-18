@@ -9,7 +9,7 @@ and coding in Swift as well as getting a notebook replacement in the gym. <br />
 
 `Tailor workouts to your own need` <br />
 `Log workouts` <br />
-`Log sets, reps and weight for each exercise` <br />`
+`Log sets, reps and weight for each exercise` <br />
 `See progress comparing old workouts to new ones` <br />
 
 
