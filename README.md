@@ -30,6 +30,12 @@ When the user has put in a number between 1 and 99 they can press Confirm to sta
 <img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 1">
 <img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 2">
 <img src="FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3">
+<img src="AppSC1.png" title="Attempt 4">
+<img src="/AppSC1.png" title="Attempt 5">
+<img src="Assets/AppSC1.png" title="Attempt 6">
+<img src="/Assets/AppSC1.png" title="Attempt 7">
+<img src="assets/AppSC1.png" title="Attempt 8">
+<img src="/assets/AppSC1.png" title="Attempt 9">
 
 Above we see the homescreen on Android and Iphone.
 ##
