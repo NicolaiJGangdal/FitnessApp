@@ -22,8 +22,8 @@ If the user is not satisfied with the number they can erase it using the Reset b
 When the user has put in a number between 1 and 99 they can press Confirm to start playing. <br />
 
 <div align="left">
-<img src="Image"AppSC1"" title="Home Page on Android" width="25%" hieght="25%">
-<img src="assets/Iphone1.png" title="Home Page on Iphone" width="25%" hieght="25%">
+<img src="AppSC1"" title="Home Page on Android" width="25%" hieght="25%">
+<img src="Assets/AppSC2.png" title="Home Page on Iphone" width="25%" hieght="25%">
 </div>
 
 Above we see the homescreen on Android and Iphone.
@@ -32,8 +32,8 @@ Above we see the homescreen on Android and Iphone.
 ### `Select Number`
 
 <div align="left">
-<img src="assets/Android2.png" title="Home Page on Android" width="25%" hieght="25%" padding="20%">
-<img src="assets/Iphone2.png" title="Home Page on Iphone" width="25%" hieght="25%">
+<img src="FitnessApp/Assets/AppSC3.png" title="Home Page on Android" width="25%" hieght="25%" padding="20%">
+<img src="FitnessApp/assets/AppSC4.png" title="Home Page on Iphone" width="25%" hieght="25%">
 </div>
 
 image("AppSC2")
