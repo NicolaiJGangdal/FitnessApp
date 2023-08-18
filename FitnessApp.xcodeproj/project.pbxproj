@@ -49,6 +49,7 @@
 		AF01D2972A1CB1BE004ACAD1 /* file1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file1.swift; sourceTree = "<group>"; };
 		AF01D2992A1CB1CA004ACAD1 /* file2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file2.swift; sourceTree = "<group>"; };
 		AF01D29B2A1CE182004ACAD1 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		AF76403E2A8F6ADC00747D8D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AF7958B02A1E987900D79525 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		AF9334E72A1BADC800B51EE4 /* CalendarTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTestView.swift; sourceTree = "<group>"; };
 		AF9334E92A1BAE8B00B51EE4 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		9DBC34B02A090EB000D0D0E7 = {
 			isa = PBXGroup;
 			children = (
+				AF76403E2A8F6ADC00747D8D /* README.md */,
 				9DBC34BB2A090EB000D0D0E7 /* FitnessApp */,
 				9DBC34BA2A090EB000D0D0E7 /* Products */,
 			);
