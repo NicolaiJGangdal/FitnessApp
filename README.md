@@ -17,48 +17,27 @@ and coding in Swift as well as getting a notebook replacement in the gym. <br />
 
 ### `Home Screen`
 
-This is the Home-page, where the user can select a number. <br />
-If the user is not satisfied with the number they can erase it using the Reset button. <br />
-When the user has put in a number between 1 and 99 they can press Confirm to start playing. <br />
+This is the Home Screen. <br />
+Here the user can edit the names of each of the seven day-cards. <br />
+Inside the day-cards is where each workout is kept. <br />
+Hoping to have a link to App Store soon, working on final touches <br />
+for apple to approve the app. <br />
 
 <div align="left">
-<img src="Assets/AppSC1"" title="Home Page on Android" width="25%" hieght="25%">
-<img src="Assets/AppSC2.png" title="Home Page on Iphone" width="25%" hieght="25%">
+<img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Home Screen" width="25%" hieght="25%"> 
+<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC2.png" title="Editing Home Screen" width="25%" hieght="25%"> 
 </div>
 
-/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.imageset
-<img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 1"> <br />
-<img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 2"> <br />
-<img src="FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3"> <br />
-<img src="AppSC1.png" title="Attempt 4"> <br />
-<img src="/AppSC1.png" title="Attempt 5"> <br />
-<img src="Assets/AppSC1.png" title="Attempt 6"> <br />
-<img src="/Assets/AppSC1.png" title="Attempt 7"> <br />
-<img src="assets/AppSC1.png" title="Attempt 8"> <br />
-<img src="/assets/AppSC1.png" title="Attempt 9"> <br />
-<img src="FitnessApp/Assets/AppSC1.png" title="Attempt 10"> <br />
-<img src="/FitnessApp/Assets/AppSC1.png" title="Attempt 11"> <br />
-<img src="FitnessApp/assets/AppSC1.png" title="Attempt 12"> <br />
-<img src="/FitnessApp/assets/AppSC1.png" title="Attempt 13"> <br />
-##
-<img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 1"> <br />
-<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 2"> <br />
-<img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3"> <br />
-<img src="/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 4"> <br />
-
-
-
-Above we see the homescreen on Android and Iphone.
 ##
 
-### `Select Number`
+### `Workouts`
+
+This is the Workout Screen <br />
+Here we can add and remove exercises. <br />
+The next step for the app is to start a <br />
+workout and save them in a calendar. <br />
 
 <div align="left">
-<img src="Assets/AppSC3.png" title="Home Page on Android" width="25%" hieght="25%" padding="20%">
-<img src="FitnessApp/assets/AppSC4.png" title="Home Page on Iphone" width="25%" hieght="25%">
+<img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC3.png" title="Workout Screen" width="25%" hieght="25%"> 
+<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC4.png" title="Editing Workout Screen" width="25%" hieght="25%"> 
 </div>
-
-image("AppSC2")
-
-Above we see a picked number on Android and Iphone.
-##
