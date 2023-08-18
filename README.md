@@ -27,7 +27,7 @@ When the user has put in a number between 1 and 99 they can press Confirm to sta
 </div>
 
 /Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.imageset
-<img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 1"> <br />
+<img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 1"> <br />
 <img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 2"> <br />
 <img src="FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3"> <br />
 <img src="AppSC1.png" title="Attempt 4"> <br />
@@ -40,6 +40,12 @@ When the user has put in a number between 1 and 99 they can press Confirm to sta
 <img src="/FitnessApp/Assets/AppSC1.png" title="Attempt 11"> <br />
 <img src="FitnessApp/assets/AppSC1.png" title="Attempt 12"> <br />
 <img src="/FitnessApp/assets/AppSC1.png" title="Attempt 13"> <br />
+##
+<img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 1"> <br />
+<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Attempt 2"> <br />
+<img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3"> <br />
+<img src="/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 4"> <br />
+
 
 
 Above we see the homescreen on Android and Iphone.
