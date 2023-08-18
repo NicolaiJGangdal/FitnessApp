@@ -20,8 +20,6 @@ and coding in Swift as well as getting a notebook replacement in the gym. <br />
 This is the Home Screen. <br />
 Here the user can edit the names of each of the seven day-cards. <br />
 Inside the day-cards is where each workout is kept. <br />
-Hoping to have a link to App Store soon, working on final touches <br />
-for apple to approve the app. <br />
 
 <div align="left">
 <img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Home Screen" width="25%" hieght="25%"> 
@@ -34,10 +32,17 @@ for apple to approve the app. <br />
 
 This is the Workout Screen <br />
 Here we can add and remove exercises. <br />
-The next step for the app is to start a <br />
-workout and save them in a calendar. <br />
 
 <div align="left">
 <img src="FitnessApp/Assets.xcassets/AppSC3.imageset/AppSC3.png" title="Workout Screen" width="25%" hieght="25%"> 
 <img src="/FitnessApp/Assets.xcassets/AppSC4.imageset/AppSC4.png" title="Editing Workout Screen" width="25%" hieght="25%"> 
 </div>
+
+##
+
+### `Next steps`
+
+The next step for the app is to start a <br />
+workout and save them in a calendar. <br />
+Hoping to have a link to App Store soon, working on final touches <br />
+for apple to approve the app. <br />
