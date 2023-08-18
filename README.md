@@ -27,15 +27,20 @@ When the user has put in a number between 1 and 99 they can press Confirm to sta
 </div>
 
 /Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.imageset
-<img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 1">
-<img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 2">
-<img src="FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3">
-<img src="AppSC1.png" title="Attempt 4">
-<img src="/AppSC1.png" title="Attempt 5">
-<img src="Assets/AppSC1.png" title="Attempt 6">
-<img src="/Assets/AppSC1.png" title="Attempt 7">
-<img src="assets/AppSC1.png" title="Attempt 8">
-<img src="/assets/AppSC1.png" title="Attempt 9">
+<img src="/Users/nicolaigangdal/Documents/FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 1"> <br />
+<img src="FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 2"> <br />
+<img src="FitnessApp/FitnessApp/Assets.xcassets/AppSC1.png" title="Attempt 3"> <br />
+<img src="AppSC1.png" title="Attempt 4"> <br />
+<img src="/AppSC1.png" title="Attempt 5"> <br />
+<img src="Assets/AppSC1.png" title="Attempt 6"> <br />
+<img src="/Assets/AppSC1.png" title="Attempt 7"> <br />
+<img src="assets/AppSC1.png" title="Attempt 8"> <br />
+<img src="/assets/AppSC1.png" title="Attempt 9"> <br />
+<img src="FitnessApp/Assets/AppSC1.png" title="Attempt 10"> <br />
+<img src="/FitnessApp/Assets/AppSC1.png" title="Attempt 11"> <br />
+<img src="FitnessApp/assets/AppSC1.png" title="Attempt 12"> <br />
+<img src="/FitnessApp/assets/AppSC1.png" title="Attempt 13"> <br />
+
 
 Above we see the homescreen on Android and Iphone.
 ##
