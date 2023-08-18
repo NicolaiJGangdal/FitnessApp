@@ -25,7 +25,7 @@ for apple to approve the app. <br />
 
 <div align="left">
 <img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC1.png" title="Home Screen" width="25%" hieght="25%"> 
-<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC2.png" title="Editing Home Screen" width="25%" hieght="25%"> 
+<img src="/FitnessApp/Assets.xcassets/AppSC2.imageset/AppSC2.png" title="Editing Home Screen" width="25%" hieght="25%"> 
 </div>
 
 ##
@@ -38,6 +38,6 @@ The next step for the app is to start a <br />
 workout and save them in a calendar. <br />
 
 <div align="left">
-<img src="FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC3.png" title="Workout Screen" width="25%" hieght="25%"> 
-<img src="/FitnessApp/Assets.xcassets/AppSC1.imageset/AppSC4.png" title="Editing Workout Screen" width="25%" hieght="25%"> 
+<img src="FitnessApp/Assets.xcassets/AppSC3.imageset/AppSC3.png" title="Workout Screen" width="25%" hieght="25%"> 
+<img src="/FitnessApp/Assets.xcassets/AppSC4.imageset/AppSC4.png" title="Editing Workout Screen" width="25%" hieght="25%"> 
 </div>
